@@ -5,6 +5,6 @@ userWeight = input("Enter your weight (in pounds): ")
 userHeight = input("Enter your height (in inches): ")
 userHeightFloat = float(userHeight) 
 
-myBMIpy = (703 * float(userWeight)) / (userHeightFloat * userHeightFloat)
+myBMIpy = round((703 * float(userWeight)) / (userHeightFloat * userHeightFloat), 2)
 
 print("Your body mass index (BMI) is " + str(myBMIpy) + "%")
